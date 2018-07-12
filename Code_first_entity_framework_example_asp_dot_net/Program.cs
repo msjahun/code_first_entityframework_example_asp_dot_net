@@ -43,6 +43,7 @@ namespace Code_first_entity_framework_example_asp_dot_net
     {
         public int BlogId { get; set; }
         public string Name { get; set; }
+        public string Url { get; set; }
 
         public virtual List<Post> Posts { get; set; }
         public virtual List<Post2> Posts2 { get; set; }
