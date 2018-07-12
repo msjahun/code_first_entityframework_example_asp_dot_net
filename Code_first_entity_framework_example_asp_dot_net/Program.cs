@@ -12,4 +12,14 @@ namespace Code_first_entity_framework_example_asp_dot_net
         {
         }
     }
+
+   public class Blog
+    {
+        public int BlogId { get; set; }
+        public string Name { get; set; }
+
+        public virtual List<Post> Posts { get; set; }
+    }
+
+
 }
