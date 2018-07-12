@@ -8,7 +8,10 @@ using System.Data.Entity;
 namespace Code_first_entity_framework_example_asp_dot_net
 {
     class Program
-    {
+    {/// <summary>
+    /// //////////////////////////////
+    /// </summary>
+    /// <param name="args"></param>
         static void Main(string[] args)
         {
             using (var db = new BlogginContext())
