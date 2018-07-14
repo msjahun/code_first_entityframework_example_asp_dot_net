@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using Code_first_entity_framework_example_asp_dot_net.Persistence;
+using Code_first_entity_framework_example_asp_dot_net.Core.Domain;
 
 namespace Code_first_entity_framework_example_asp_dot_net
 {
@@ -42,53 +44,12 @@ namespace Code_first_entity_framework_example_asp_dot_net
         }
     }
 
-   public class Blog
-    {
-        public int BlogId { get; set; }
-        public string Name { get; set; }
-        public string Url { get; set; }
-
-        public virtual List<Post> Posts { get; set; }
-        public virtual List<Post2> Posts2 { get; set; }
-
-        public virtual List<Post3> Posts3 { get; set; }
-    }
-
-    public class Post
-    {
-        public int PostId { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
-
-        public int BlogId { get; set; }
-        public virtual Blog Blog { get; set; }
-    }
-    public class Post2
-    {
-        public int Post2Id { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
-
-        public int BlogId { get; set; }
-        public virtual Blog Blog { get; set; }
-    }
-
-    public class Post3
-    {
-        public int Post3Id { get; set; }
-        public string Title { get; set; }
-        public string Content { get; set; }
-
-        public int BlogId { get; set; }
-        public virtual Blog Blog { get; set; }
-    }
+  
 
 
-    public class BlogginContext : DbContext
-    {
-        public DbSet<Blog> Blogs { get; set; }
-        public DbSet<Post> Posts { get; set; }
-        public DbSet<Post2> Posts2 { get; set; }
-        public DbSet<Post3> Posts3 { get; set; }
-    }
+   
+
+   
+
+
 }
