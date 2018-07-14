@@ -14,7 +14,7 @@ namespace Code_first_entity_framework_example_asp_dot_net.Persistence
      /// 
      /// </summary>
         public DbSet<Blog> Blogs { get; set; }
-        public DbSet<Post> Posts { get; set; }
+        public DbSet<Post> Post2s { get; set; }
         public DbSet<Post2> Posts2 { get; set; }
         public DbSet<Post3> Posts3 { get; set; }
     }
